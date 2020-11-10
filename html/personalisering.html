@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Office Plants - Personalisering</title>
+    <link rel="icon" type="image/png" href="../media/favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/project.css">
+</head>
+<body class="grid">
+<h1 class="hidden">Personalisering</h1>
+<header>
+    <section class="g-header">
+        <h2 class="g-title">Office Plants</h2>
+        <img src="../media/logo.png" alt="logo" class="g-logo">
+        <form>
+            <label for="search"></label>
+            <input type="text" id="search" name="search" class="g-search">
+        </form>
+        <a href="" class="g-link1">Account</a>
+        <a href="" class="g-link2">Winkelwagen</a>
+        <nav class="menu g-nav">
+            <h3 class="hidden">Navigatie</h3>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="sub-menu"><a href="producten.html">Producten</a>
+                    <ul>
+                        <li><a href="producten.html#kamerplanten">Kamerplanten</a></li>
+                        <li><a href="producten.html#bureau">Planten voor de bureau</a></li>
+                        <li><a href="producten.html#eco-systemen">Mini ecosystemen</a></li>
+                        <li><a href="producten.html#bloeiend">Bloeiende planten</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="menu-selected">Personalisering</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<main>
+    <article class="g-content">
+      <h2>Personaliseer je product</h2>
+      <form id="formulier" action="succes.html" method="get" class="personalize">
+        <fieldset id="producten">
+          <legend>Productkeuze<span class="star">*</span></legend>
+          <label for="productkeuze">Product</label>
+          <select name="productkeuze" id="productkeuze" required>
+            <option value="">Selecteer</option>
+           <optgroup label="Planten voor de bureau" >
+             <option value="pannenkoek">Pannenkoekenplant (Pilea Peperomioides)</option>
+             <option value="aloe">Aloë Vera</option>
+             <option value="ficus">Ficus Abidjan</option>
+             <option value="monstera">Rhaphidophora Tetrasperma (Monstera Minima)</option>
+             <option value="blauwvaren">Phlebodium (Blauwvaren)</option>
+             <option value="graslelie">Chlorophytum (Graslelie)</option>
+           </optgroup>
+          <optgroup label="Bloeiende planten">
+            <option value="flamingo wit">Flamingoplant Wit</option>
+            <option value="flamingo zalm">Flamingoplant Zalmroze</option>
+            <option value="flamingo paars">Flamingoplant Paars</option>
+            <option value="flamingo roze">Flamingoplant Lichtroze</option>
+            <option value="orchidee wit">Orchidee Wit</option>
+            <option value="orchidee paars">Orchidee Paars</option>
+            <option value="orchidee roze">Orchidee Roze</option>
+            <option value="orchidee wit-roze">Orchidee Wit/Roze</option>
+          </optgroup>
+          </select>
+        </fieldset>
+        <fieldset id="pot-kleur">
+          <legend>Kies een kleur voor je bloempot</legend>
+          <label for="pot">Selecteer de kleur:</label>
+            <input type="color" id="pot" name="pot-kleur" value="#1ab040">
+        </fieldset>
+        <fieldset id="file">
+          <legend>Kies een opdruk om je bloempot mee te versieren (+ €9.99)</legend>
+          <label for="file-print">Laad een bestand op:</label>
+          <input type="file" id="file-print" name="file">
+        </fieldset>
+        <fieldset id="text">
+          <legend>Plaats een mooie boodschap op je bloempot (+ €4.99)</legend>
+          <label for="text-field">Typ hier de tekst:</label>
+          <input type="text" id="text-field" name="text">
+        </fieldset>
+        <fieldset id="gift">
+          <legend>Wil je de bestelling inpakken als geschenk? (+ €2.99)</legend>
+          <label for="optie1"><input type="radio" id="optie1" name="gift" value="ja">Ja</label>
+          <label for="optie2"><input type="radio" id="optie2" name="gift" value="nee" checked>Nee</label>
+        </fieldset>
+        <fieldset id="number">
+            <legend>Hoeveel stuks wil je bestellen?<span class="star">*</span></legend>
+            <label for="pieces">Aantal stuks</label>
+            <input type="number" id="pieces" name="number" step="1" min="1" max="20" required>
+        </fieldset>
+        <fieldset id="adres">
+            <legend class="required">Adresgegevens<span class="star">*</span></legend>
+            <label for="street">Straat</label>
+            <input type="text" id="street" name="straat" required>
+            <label for="num">Huisnummer</label>
+            <input type="text" id="num" name="num" size="4" required>
+            <label for="zip">Postcode</label>
+            <input type="text" id="zip" name="zip" size="4" pattern="[1-9]\d{3}" required>
+            <label for="town">Gemeente</label>
+            <input type="text" id="town" name="town" required>
+        </fieldset>
+        <fieldset id="comment">
+          <legend>Bijkomende Opmerkingen</legend>
+            <label for="comment-box"></label>
+            <textarea id="comment-box" name="comment" rows="2" cols="30"></textarea>
+        </fieldset>
+      </form>
+      <input type="submit" form="formulier" value="Bestelling Afrekenen" class="button">
+    </article>
+  </main>
+  
+<footer class="g-footer">
+    <p>© 2020 - Matthias Vermeulen</p>
+</footer>
+</body>
+</html>
